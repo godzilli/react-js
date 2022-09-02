@@ -29,3 +29,4 @@ export function App() {
 //Em Post o author e content são parametros
 //componente é: função que retorna html e deve ter extensão JSX -> java + html
 //escopo do css -> especifico de um componente e nao afetar outras partes do codigo
+//quando algo repete muito, deve virar componente. Outro momento é quando retira algo de um Component maior

@@ -1,11 +1,12 @@
 import { ThumbsUp } from "phosphor-react";
 import { Trash } from "phosphor-react";
+import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
 
 export function Comment() {
   return (
     <div className={styles.comment}>
-      <img src='https://avatars.githubusercontent.com/u/50343150?v=4' />
+      <Avatar hasBorder={false} src="https://avatars.githubusercontent.com/u/50343150?v=4" alt=""/>
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
@@ -19,7 +20,7 @@ export function Comment() {
               </time>
             </div>
             <button title="deletar comentario">
-              <Trash size={20}></Trash>
+              <Trash size={24}></Trash>
             </button>
           </header>
 
@@ -36,3 +37,5 @@ export function Comment() {
     </div>
   );
 }
+
+//before é como se fosse um elemento dentro do <span>
