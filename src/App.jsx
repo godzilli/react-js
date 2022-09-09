@@ -4,6 +4,48 @@ import styles from "./App.module.css";
 import "./global.css";
 import { Sidebar } from "./components/Sidebar";
 
+//iteraçao: cria estrutura de repetição
+
+const posts =[
+  {
+    id: 1,
+    author: {
+      avatarUrl: 'https://avatars.githubusercontent.com/u/50343150?v=4',
+      name: 'Jennifer',
+      role: 'Analista na RPC',
+    },
+    content: [
+      { type: 'paragraph', content: 'Olá'},
+      { type: 'paragraph', content:'Segue teste de React JS'},
+        
+      { type: 'link', content:'github.com/godzilli'},
+        
+      { type: 'paragraph', content:'Estudos!'}
+    ],
+    publishedAt: new Date('2022-09-09 13:00:00'),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://avatars.githubusercontent.com/u/43991948?v=4',
+      name: 'Gabriel',
+      role: 'Analista na MadeiraMadeira',
+    },
+    content: [
+      { type: 'paragraph', content: 'Olá'},
+      { type: 'paragraph', content:'Segue teste de React JS'},
+        
+      { type: 'link', content:'github.com/lam0glia'},
+        
+      { type: 'paragraph', content:'Estudos!'}
+    ],
+    publishedAt: new Date('2022-09-10 20:30:00'),
+  },
+];
+
+// posts.forEach(post => { return 1;}) nao retornará nada
+// posts.map(post => { return 1;}) retornará um number. Então se utiliza um map.
+
 export function App() {
   return (
     <div>
@@ -12,15 +54,14 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Jennifer"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rerum corrupti culpa enim voluptates tenetur, a ratione aliquid. Quisquam et a voluptates nisi beatae vero consequuntur praesentium provident repellat quis!"
-          />
-          <Post
-            author="Gabriel"
-            content="Post legal de teste de componentes!"
-          />
-          <Post />
+          {posts.map(post => {
+            return (<Post 
+              author={post.author}
+              content={post.content}
+              publishedAt={post.publishedAt}
+            />
+            )
+          })}
         </main>
       </div>
     </div>
