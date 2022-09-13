@@ -1,0 +1,41 @@
+* Programação imperativa
+Exatamente todos os passo-a-passo.
+
+* Programação declarativa
+Quais condições para ter o resultado final.
+
+----------
+// posts.forEach(post => { return 1;}) nao retornará nada
+// posts.map(post => { return 1;}) retornará um number. Então se utiliza um map.
+
+//Em Post o author e content são parametros
+//componente é: função que retorna html e deve ter extensão JSX -> java + html
+//escopo do css -> especifico de um componente e nao afetar outras partes do codigo
+//quando algo repete muito, deve virar componente. Outro momento é quando retira algo de um Component maior
+
+//before é como se fosse um elemento dentro do <span>
+//... copia os valores que existem na variavel
+
+// dados que se alteram no post, author: {avatar_url, "", name: "", role: ""}
+// publishedAt: Date
+// content: String
+
+// intl para datas
+
+//estado = variaveis que eu quero que o componente monitore
+
+//key entra no primeiro elemento que aparece dentro do retorno de um .map
+
+------
+* Key no React
+-> estado, propriedades e componentes.
+3 momentos em qu um componente é rend novamente:
+1. quando o estado altera;
+2. quando a proriedade altera;
+3. quando um componente pai rend novamente; aqui renderizará novamente mesmso não tndo altteração, pq o pai renderizou:
+        {comments.map(comment => {
+          return <Comment key={comment} content={comment}/>
+        })}
+O React entende quando acontece uma alteração quando usada uma key.
+
+--key é quando algo se altera muita vezes?--
