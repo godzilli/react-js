@@ -38,4 +38,5 @@ Quais condições para ter o resultado final.
         })}
 O React entende quando acontece uma alteração quando usada uma key.
 
---key é quando algo se altera muita vezes?--
+--key é usado quando algo se altera/repete muita vezes, por exemplo, uma lista, ajuda o react a entender oq ja esta em tela ou nao, fzendo a apliaçao ser mais rapida,
+  NAO pode ser indice pois o indice nao se altera, a key seria um id flexivel para identficar onde e oq foi alterado para a tela renderizar novamente--
