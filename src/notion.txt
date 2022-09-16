@@ -40,3 +40,11 @@ O React entende quando acontece uma alteração quando usada uma key.
 
 --key é usado quando algo se altera/repete muita vezes, por exemplo, uma lista, ajuda o react a entender oq ja esta em tela ou nao, fzendo a apliaçao ser mais rapida,
   NAO pode ser indice pois o indice nao se altera, a key seria um id flexivel para identficar onde e oq foi alterado para a tela renderizar novamente--
+
+________
+A melhor comunicacao entre componentes é feita pelas propriedades.
+
+imutabilidade -> as variaveis não sofrem alteracao, é criado um novo valor/espaço na memoria
+
+
+5:40! NA AULA SOBRE ''VALIDANDO FORMULARIO''
