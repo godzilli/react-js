@@ -47,4 +47,4 @@ A melhor comunicacao entre componentes é feita pelas propriedades.
 imutabilidade -> as variaveis não sofrem alteracao, é criado um novo valor/espaço na memoria
 
 
-5:40! NA AULA SOBRE ''VALIDANDO FORMULARIO''
+{funcao} nunca {execucao de uma funcao} caso queira a execucao de uma funcao, usa-se a arrow function () => funcao.
