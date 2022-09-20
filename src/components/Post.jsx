@@ -13,9 +13,9 @@ export function Post({ author, publishedAt, content }) {
     'Post muito nice'
   ])
 
-  const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBr,});
-  
   const [newCommentText, setNewCommentText] = useState('');
+
+  const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBr,});
 
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, 
     {
@@ -48,6 +48,8 @@ export function Post({ author, publishedAt, content }) {
       setComments(commentsWithoutDeleteOne);
     }
 
+  const isNewCommentEmpty = newCommentText.length === 0;
+  
   return (
     <article className={styles.post}>
       <header>
@@ -83,7 +85,7 @@ export function Post({ author, publishedAt, content }) {
           required
           />
         <footer>
-          <button type="submit">Comentar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>Comentar</button>
         </footer>
       </form>
 
