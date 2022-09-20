@@ -4,8 +4,6 @@ import styles from "./App.module.css";
 import "./global.css";
 import { Sidebar } from "./components/Sidebar";
 
-//iteraçao: cria estrutura de repetição
-
 const posts =[
   {
     id: 1,

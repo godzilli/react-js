@@ -1,10 +1,10 @@
 import styles from './Header.module.css'
-import logoHeader from '../../imagens/vite.svg';
+import pokelogo from '../../imagens/pokelogo.png';
 
 export function Header(){
     return(
         <header className={styles.header}>
-            <img src={logoHeader} alt="Logotipo da minha aplicacao" />
+            <img src={pokelogo} alt="Logotipo da minha aplicacao" />
         </header>
     );
 }

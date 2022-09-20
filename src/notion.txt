@@ -1,32 +1,55 @@
+Iniciando o projeto:
+-> mkdir ~nome do projeto/projeto~
+-> npm install
+-> npm install react-icons --save
+-> npm create vite@latest
+
+Utilizando os arquivos:
+    Dentro do src:
+    -> App.jsx
+    -> main.jsx
+    -> global.css
+
+Criando a pasta dos componentes:
+-> Por exemplo:
+    Header
+    Header.module.css
+
+Criando uma pasta fora do src:
+-> Imagem
+
+Adicionando estilo global.
+Ajustando aplicação que já vem pronta.
+----------------------------------------------------------------
 * Programação imperativa
 Exatamente todos os passo-a-passo.
 
 * Programação declarativa
 Quais condições para ter o resultado final.
 
-----------
-// posts.forEach(post => { return 1;}) nao retornará nada
-// posts.map(post => { return 1;}) retornará um number. Então se utiliza um map.
+----------------------------------------------------------------
+- posts.forEach(post => { return 1;}) nao retornará nada
+- posts.map(post => { return 1;}) retornará um number. Então se utiliza um map.
 
-//Em Post o author e content são parametros
-//componente é: função que retorna html e deve ter extensão JSX -> java + html
-//escopo do css -> especifico de um componente e nao afetar outras partes do codigo
-//quando algo repete muito, deve virar componente. Outro momento é quando retira algo de um Component maior
+-Em Post o author e content são parametros
+-componente é: função que retorna html e deve ter extensão JSX -> java + html
+-escopo do css -> especifico de um componente e nao afetar outras partes do codigo
+-quando algo repete muito, deve virar componente. Outro momento é quando retira algo de um Component maior
 
-//before é como se fosse um elemento dentro do <span>
-//... copia os valores que existem na variavel
+-before é como se fosse um elemento dentro do <span>
+-... copia os valores que existem na variavel
 
-// dados que se alteram no post, author: {avatar_url, "", name: "", role: ""}
-// publishedAt: Date
-// content: String
+- dados que se alteram no post, author: {avatar_url, "", name: "", role: ""}
+- publishedAt: Date
+- content: String
 
-// intl para datas
+- intl para datas
 
-//estado = variaveis que eu quero que o componente monitore
+-estado = variaveis que eu quero que o componente monitore
 
-//key entra no primeiro elemento que aparece dentro do retorno de um .map
+-key entra no primeiro elemento que aparece dentro do retorno de um .map
 
-------
+---------------------------------------------------------------
 * Key no React
 -> estado, propriedades e componentes.
 3 momentos em qu um componente é rend novamente:
@@ -41,10 +64,16 @@ O React entende quando acontece uma alteração quando usada uma key.
 --key é usado quando algo se altera/repete muita vezes, por exemplo, uma lista, ajuda o react a entender oq ja esta em tela ou nao, fzendo a apliaçao ser mais rapida,
   NAO pode ser indice pois o indice nao se altera, a key seria um id flexivel para identficar onde e oq foi alterado para a tela renderizar novamente--
 
-________
+---------------------------------------------------------------
 A melhor comunicacao entre componentes é feita pelas propriedades.
 
-imutabilidade -> as variaveis não sofrem alteracao, é criado um novo valor/espaço na memoria
+-> Imutabilidade -> as variaveis não sofrem alteracao, é criado um novo valor/espaço na memoria
 
 
 {funcao} nunca {execucao de uma funcao} caso queira a execucao de uma funcao, usa-se a arrow function () => funcao.
+
+-> Iteraçao: cria estrutura de repetição
+---------------------------------------------------------------
+Começando com Typescript:
+(praq serve uma interface?)
+

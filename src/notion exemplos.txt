@@ -1,0 +1,24 @@
+interface User {
+    name: string;
+    bio: string;
+    age: number;
+}
+
+function sumAge(users: User[]){
+    let sum = 0;
+
+    for (const user of users){
+        sum += user.age;
+    }
+    return sum;
+}
+sumAge([
+    {
+        name: 'Jenni',
+        bio: 'analista',
+        age: 23,
+    }
+])
+
+
+->> function sumAge(users: User[]) *-> ':' é a tipagem, que é User mas também um array []
